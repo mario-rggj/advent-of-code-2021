@@ -4,7 +4,7 @@ import { InputParser } from "./input-parser"
 describe("InputParser",() => {
 
     const testFilePath: string = "./src/utils/test.txt"
-    const testFileLines: string = "123\n123\n321\n"
+    const testFileLines: string = "123\n123\n321"
     const expetedParsedLines: number[] = [123,123,321]
 
     beforeEach(()=>{
