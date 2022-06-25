@@ -2,7 +2,7 @@ import fs from 'fs'
 import { InputReader } from './input-reader'
 
 describe('InputReader', () => {
-  const testFilePath: string = './src/utils/test.txt'
+  const testFilePath: string = './src/utils/input-reader-test.txt'
   const testFileLines: string = '123\n123\n321'
 
   beforeEach(() => {
