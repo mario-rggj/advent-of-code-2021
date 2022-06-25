@@ -1,5 +1,5 @@
 import fs from 'fs'
-import { ExerciseRunnerResult } from '../utils/exercise-runner-result'
+import {ExerciseRunnerResult} from '../utils/exercise-runner-result'
 import * as exerciseRunner from './exercise-runner'
 
 describe('Exercise 1', () => {
@@ -17,7 +17,7 @@ describe('Exercise 1', () => {
     it('should calculate how many times the depth increased', () => {
       const
         exerciseResult: ExerciseRunnerResult = exerciseRunner.run(testFilePath),
-        expectedResult: ExerciseRunnerResult = { partOne: 7, partTwo: 5 }
+        expectedResult: ExerciseRunnerResult = {partOne: 7, partTwo: 5}
 
       expect(exerciseResult).toEqual(expectedResult)
     })
