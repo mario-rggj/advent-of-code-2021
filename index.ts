@@ -1,4 +1,4 @@
-import { DepthIncreaseDetector } from "./src/first-day/depth-increase-detector";
+import { DepthIncreaseDetector } from "./src/1/depth-increase-detector";
 import { InputParser } from "./src/utils/input-parser";
 
 const depthIncreaseDetector: DepthIncreaseDetector = new DepthIncreaseDetector()
