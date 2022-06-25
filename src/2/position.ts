@@ -1,5 +1,5 @@
 export interface Position {
-  horizontal: number,
-  depth: number,
+  horizontal: number
+  depth: number
   aim?: number
 }

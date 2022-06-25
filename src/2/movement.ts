@@ -1,6 +1,6 @@
-import {DIRECTIONS} from './directions'
+import { DIRECTIONS } from './directions'
 
 export interface Movement {
-  direction: DIRECTIONS,
+  direction: DIRECTIONS
   distance: number
 }

@@ -1,4 +1,4 @@
 export interface ExerciseRunnerResult {
-  partOne: number,
+  partOne: number
   partTwo: number
 }

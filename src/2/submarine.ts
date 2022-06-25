@@ -1,15 +1,15 @@
-import {Position} from './position'
-import {Movement} from './movement'
-import {DIRECTIONS} from './directions'
+import { Position } from './position'
+import { Movement } from './movement'
+import { DIRECTIONS } from './directions'
 
 export class Submarine {
-  private position: Position = {
+  private readonly position: Position = {
     horizontal: 0,
     depth: 0,
     aim: 0
   }
 
-  move(movementInstructions: Movement[]): number {
+  move (movementInstructions: Movement[]): number {
     movementInstructions.forEach(movementInstruction => {
       if (movementInstruction.direction === DIRECTIONS.down) {
         this.position.depth += movementInstruction.distance
@@ -23,7 +23,7 @@ export class Submarine {
     return this.position.depth * this.position.horizontal
   }
 
-  moveWithAim(movementInstructions: Movement[]): number {
+  moveWithAim (movementInstructions: Movement[]): number {
     movementInstructions.forEach(movementInstruction => {
       if (movementInstruction.direction === DIRECTIONS.down) {
         this.position.aim! += movementInstruction.distance

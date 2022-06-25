@@ -1,6 +1,6 @@
-import {Movement} from './movement'
-import {DIRECTIONS} from './directions'
-import {Submarine} from './submarine'
+import { Movement } from './movement'
+import { DIRECTIONS } from './directions'
+import { Submarine } from './submarine'
 
 const makeSut = () => {
   const sut = new Submarine()
@@ -13,7 +13,7 @@ describe('Submarine', () => {
   describe('Given a submarine', () => {
     describe('When it receives an array of movement instructions', () => {
       it('Then it should move accordingly', () => {
-        const {sut} = makeSut()
+        const { sut } = makeSut()
         const movementInstructions: Movement[] = [
           {
             direction: DIRECTIONS.down,
@@ -32,7 +32,7 @@ describe('Submarine', () => {
         const position = sut.move(movementInstructions)
 
         expect(position).toEqual(100)
-      });
-    });
-  });
-});
+      })
+    })
+  })
+})
